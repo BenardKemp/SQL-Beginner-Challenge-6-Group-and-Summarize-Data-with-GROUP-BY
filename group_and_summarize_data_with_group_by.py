@@ -5,7 +5,7 @@ def group_and_summarize_data_with_group_by():
     conn = sqlite3.connect("example.db")
     cursor = conn.cursor()
 
-    # SQL query for Challenge #1
+    # SQL query for Challenge #6
     query = "SELECT category, COUNT(*) AS total_products FROM products GROUP BY category"
 
     cursor.execute(query)
